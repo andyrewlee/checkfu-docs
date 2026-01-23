@@ -1,0 +1,121 @@
+---
+title: "Creating Agents"
+description: "Set up an AI tutor for your courses"
+---
+
+This guide walks through creating an AI tutoring agent.
+
+## Create an Agent
+
+1. Click **Agents** in the sidebar
+2. Click **New Agent**
+3. Enter a name
+4. Write the system prompt
+5. Configure settings
+
+## Writing the System Prompt
+
+The system prompt tells the agent how to behave. Include:
+
+### Who It Is
+```
+You are Ms. Chen, a patient and encouraging math tutor
+who specializes in helping elementary students build
+confidence with numbers.
+```
+
+### What It Knows
+```
+You are helping students with 3rd grade multiplication.
+Focus on building understanding before memorization.
+```
+
+### How It Should Act
+```
+Always celebrate effort, not just correct answers.
+Use visual examples and real-world scenarios.
+If a student is frustrated, acknowledge their feelings
+before redirecting to the problem.
+```
+
+### What It Shouldn't Do
+```
+Never give away answers directly. Instead, guide
+students to discover the answer themselves.
+```
+
+## Example System Prompt
+
+```
+You are Coach Alex, a friendly learning coach who helps
+middle school students with science.
+
+Your teaching style:
+- Use analogies and real-world examples
+- Break complex topics into smaller pieces
+- Encourage curiosity and questions
+- Celebrate progress and effort
+
+When a student is stuck:
+1. Ask what they've already tried
+2. Give a hint related to what they know
+3. If still stuck, break it into smaller steps
+4. Only give direct help after multiple attempts
+
+Never:
+- Give away answers without the student working
+- Use condescending language
+- Skip steps in explanations
+
+Your goal is to build confident, independent learners.
+```
+
+## Agent Settings
+
+### Basic Info
+- **Name**: How the agent appears
+- **Description**: Notes for teachers (students don't see this)
+- **Status**: Active or Archived
+
+### Tutoring Strategy
+Pick the main approach:
+
+| Strategy | Best For |
+|----------|----------|
+| Socratic | Building critical thinking |
+| Hints only | Preserving struggle |
+| Guided | Students who need more support |
+| Direct | Quick questions, review |
+
+### Guardrails
+- **Never reveal answers**: Enforce hint-only behavior
+- **Max hints**: Limit hints per question before saying "ask your teacher"
+
+## Assigning to Courses
+
+### As Course Default
+1. Open course settings
+2. Select **Default Agent**
+3. Pick your agent
+
+### For a Specific Lesson
+1. Open lesson settings
+2. Enable **Agent Override**
+3. Pick a different agent (or none)
+
+## Testing Your Agent
+
+Before using with students:
+
+1. Go to the agent's page
+2. Click **Test Chat**
+3. Pretend to be a student
+4. Refine the system prompt based on responses
+
+## Templates
+
+Start faster with pre-built templates:
+- **Math Tutor** - Problem-solving focused
+- **Reading Helper** - Comprehension support
+- **Science Guide** - Inquiry-based exploration
+- **Writing Coach** - Process feedback

@@ -1,0 +1,108 @@
+---
+title: "Question Types"
+description: "What kinds of questions you can create"
+---
+
+Checkfu supports several question types. You can create them manually or let AI generate them.
+
+## Multiple Choice
+
+Students pick one answer from several options.
+
+```
+What is 7 × 8?
+
+A) 54
+B) 56 ✓
+C) 58
+D) 64
+```
+
+**Settings:**
+- Number of options (2-6)
+- Shuffle option order
+- "None of the above" option
+
+## Fill in the Blank
+
+Students type their answer.
+
+```
+The capital of France is _______.
+
+Accepted answers: Paris, paris
+```
+
+**Settings:**
+- Exact match or flexible matching
+- Case sensitive or not
+- Multiple accepted answers
+
+## Numeric
+
+For math problems. Students enter a number.
+
+```
+What is 15% of 80?
+
+Answer: 12 (accepts 11.9-12.1)
+```
+
+**Settings:**
+- Tolerance (how close counts as correct)
+- Required precision (decimal places)
+- Accept fractions or decimals
+
+## Short Answer
+
+Open-ended responses graded by AI or manually.
+
+**Settings:**
+- Minimum/maximum length
+- Keywords to look for
+- Grading rubric
+
+## Adding Questions
+
+### Create Manually
+
+1. Click **Add Question**
+2. Pick a type
+3. Enter the question and answer(s)
+4. Set difficulty (1-5)
+5. Add concept tags
+
+### Generate with AI
+
+1. Click **Generate Questions**
+2. Describe what you need
+3. Review and edit what AI creates
+4. Adjust difficulty levels
+
+## Question Settings
+
+Every question has:
+
+| Setting | What It Does |
+|---------|--------------|
+| **Difficulty** | 1 (easiest) to 5 (hardest) |
+| **Concept tags** | Skills this question tests |
+| **Hints** | Optional clues for students |
+| **Explanation** | Shown after they answer |
+
+## Tips
+
+<AccordionGroup>
+  <Accordion title="Include all difficulty levels">
+    Add questions at levels 1-5 so the quiz can adapt effectively.
+  </Accordion>
+  <Accordion title="Use consistent concept tags">
+    Tag the same skill the same way across questions for accurate gap analysis.
+  </Accordion>
+  <Accordion title="Write good wrong answers">
+    For multiple choice, make wrong answers plausible but clearly wrong.
+  </Accordion>
+  <Accordion title="Add explanations">
+    Students learn from seeing why an answer was wrong.
+  </Accordion>
+</AccordionGroup>

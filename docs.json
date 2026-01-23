@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Checkfu",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#0074CE",
+    "light": "#3B9EE8",
+    "dark": "#005A9E"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -14,55 +14,74 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "quickstart"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Projects",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "projects/overview",
+              "projects/editor",
+              "projects/generation",
+              "projects/variations",
+              "projects/answer-keys"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Sources",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "sources/overview",
+              "sources/using-sources"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Courses",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+              "courses/overview",
+              "courses/creating-courses",
+              "courses/lessons"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Adaptive Quizzes",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "quizzes/overview",
+              "quizzes/question-types",
+              "quizzes/adaptive-learning"
+            ]
+          },
+          {
+            "group": "Students",
+            "pages": [
+              "students/overview",
+              "students/progress-tracking",
+              "students/grading"
+            ]
+          },
+          {
+            "group": "Agents",
+            "pages": [
+              "agents/overview",
+              "agents/creating-agents",
+              "agents/tutoring-strategies"
+            ]
+          },
+          {
+            "group": "Workspaces",
+            "pages": [
+              "workspaces/overview",
+              "workspaces/members"
+            ]
+          },
+          {
+            "group": "Student Experience",
+            "pages": [
+              "student-experience/overview",
+              "student-experience/taking-courses",
+              "student-experience/ai-tutor"
             ]
           }
         ]
@@ -71,14 +90,9 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "App",
+          "href": "https://checkfu.com",
+          "icon": "arrow-up-right-from-square"
         }
       ]
     }
@@ -91,32 +105,19 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@checkfu.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Get Started",
+      "href": "https://checkfu.com"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/checkfu",
+      "github": "https://github.com/checkfu"
     }
   }
 }
