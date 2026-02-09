@@ -21,67 +21,38 @@
             ]
           },
           {
+            "group": "Courses",
+            "pages": [
+              "courses/overview",
+              "courses/lessons"
+            ]
+          },
+          {
+            "group": "AI Tutor",
+            "pages": [
+              "ai-tutor/overview",
+              "ai-tutor/adaptive-quiz",
+              "ai-tutor/final-exam"
+            ]
+          },
+          {
             "group": "Projects",
             "pages": [
-              "projects/overview",
-              "projects/editor",
-              "projects/generation",
-              "projects/variations",
-              "projects/answer-keys"
+              "projects/worksheets",
+              "projects/slides",
+              "projects/project-source"
+            ]
+          },
+          {
+            "group": "Workspace",
+            "pages": [
+              "workspaces/overview"
             ]
           },
           {
             "group": "Sources",
             "pages": [
-              "sources/overview",
-              "sources/using-sources"
-            ]
-          },
-          {
-            "group": "Courses",
-            "pages": [
-              "courses/overview",
-              "courses/creating-courses",
-              "courses/lessons"
-            ]
-          },
-          {
-            "group": "Adaptive Quizzes",
-            "pages": [
-              "quizzes/overview",
-              "quizzes/question-types",
-              "quizzes/adaptive-learning"
-            ]
-          },
-          {
-            "group": "Students",
-            "pages": [
-              "students/overview",
-              "students/progress-tracking",
-              "students/grading"
-            ]
-          },
-          {
-            "group": "Agents",
-            "pages": [
-              "agents/overview",
-              "agents/creating-agents",
-              "agents/tutoring-strategies"
-            ]
-          },
-          {
-            "group": "Workspaces",
-            "pages": [
-              "workspaces/overview",
-              "workspaces/members"
-            ]
-          },
-          {
-            "group": "Student Experience",
-            "pages": [
-              "student-experience/overview",
-              "student-experience/taking-courses",
-              "student-experience/ai-tutor"
+              "sources/overview"
             ]
           }
         ]

@@ -1,0 +1,113 @@
+---
+title: "Final Exam"
+description: "Create an end-of-course test that covers all your lessons"
+---
+
+A final exam is a test at the end of your course. It pulls questions from all your lessons and adjusts difficulty the same way lesson quizzes do — harder questions when a student answers correctly, easier ones when they don't.
+
+## How Final Exams Work
+
+1. Checkfu looks at all the quiz questions across your course lessons
+2. It builds a **question bank** with different versions of those questions
+3. Each student gets a different set of questions from the bank
+4. The test adapts in real time, just like the lesson quizzes
+5. At the end, students see their score and which areas need work
+
+## Create a Final Exam
+
+### Step 1: Build the Question Bank
+
+1. Open your course
+2. Go to **Final Exam**
+3. Click **Generate Question Bank**
+4. Set how many variations of each question to create with the **Questions per Concept** slider (default is 3 - more variations means more variety between student exams)
+5. Click **Generate** and wait for AI to build the bank
+
+What happens: AI takes the quiz questions from your lessons and creates new versions of each one (the number you picked). The new questions keep the same difficulty levels and concept tags, so every student gets a different set.
+
+If you already have a question bank and want to rebuild it, the button says **Regenerate Question Bank** instead.
+
+<Warning>
+Your lessons need quiz questions first. If your lessons don't have quizzes, the question bank won't have anything to pull from.
+</Warning>
+
+### Step 2: Set Up the Exam
+
+| Setting | What It Does | Default |
+|---------|-------------|---------|
+| **Name** | What students see (like "Unit 3 Final Exam") | -- |
+| **Target Questions** | How many questions to aim for | 25 |
+| **Max Questions** | The most questions a student will see | 50 |
+| **Mastery Threshold** | Right answers in a row for mastery | 3 |
+| **Mastery Difficulty** | Difficulty level that counts for mastery | 4 |
+| **Time Limit** | How many minutes students get (optional) | No limit |
+| **Passing Score** | What percentage counts as passing | 70% |
+| **Max Attempts** | How many times a student can try | Unlimited |
+
+### Step 3: Publish
+
+1. Review your settings
+2. Click **Publish**
+3. The exam becomes available to students who reach the end of the course
+
+## What Students See
+
+### During the Exam
+- One question at a time
+- A timer (if you set a time limit)
+- A progress bar showing how far along they are
+- They can flag questions to come back to
+
+### After the Exam
+- Their final score and percentage
+- Whether they passed or not
+- Which areas they did well on
+- Which areas need more work
+- A button to retake (if you allow retakes and they have attempts left)
+
+## How the Exam Adapts
+
+The final exam works the same way as lesson quizzes:
+
+- **Right answer** = next question is harder
+- **Wrong answer** = next question is easier
+- The exam tracks mastery across all the skills in your course
+- It finds gaps by looking at which concept tags the student struggles with
+
+## Reviewing Student Results
+
+After students take the exam, you can see:
+
+### For Each Student
+- Their score and whether they passed
+- How they did on each question
+- How difficulty changed during the test
+- Which skills are strong and which need work
+- How long they spent on each question
+
+### Teacher Overrides
+
+If AI graded a free response question wrong (or you disagree with the score), you can:
+1. Open the student's exam results
+2. Click on any question
+3. Change the score
+4. Add your own feedback
+
+Your changes update the student's final score.
+
+## Tips
+
+<AccordionGroup>
+  <Accordion title="Make sure your lessons have quiz questions first">
+    The question bank is built from your lesson quiz questions. If a lesson has no quiz, it won't be covered in the final exam.
+  </Accordion>
+  <Accordion title="Review the question bank">
+    After AI generates the question bank, look through some of the questions to make sure they're accurate.
+  </Accordion>
+  <Accordion title="Set a fair passing score">
+    70% is a good starting point. You can always change it later.
+  </Accordion>
+  <Accordion title="Consider a time limit for test security">
+    A time limit keeps students from looking up every answer. A good rule of thumb is about 1-2 minutes per question.
+  </Accordion>
+</AccordionGroup>

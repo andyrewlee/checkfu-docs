@@ -1,78 +1,140 @@
 ---
-title: "Courses"
-description: "Organize content into lessons for students"
+title: "How to Create a Course"
+description: "Set up a course so your students can work through your lessons"
 ---
 
-Courses let you organize your projects into a sequence that students work through. A course contains lessons, and each lesson can have worksheets, videos, text, and quizzes.
+A course is a group of lessons that your students work through. Think of it like a unit or a chapter. You put your lessons inside a course, and students go through them one by one (or in any order you choose).
 
-## Course Structure
+## What a Course Looks Like
 
-A course looks like this:
+Here is an example:
 
 ```
 Course: "Unit 3: Multiplication"
 ├── Section: "Basic Facts"
-│   ├── Lesson: "Introduction to Multiplication"
+│   ├── Lesson: "What is Multiplication?"
 │   ├── Lesson: "Multiplying by 2, 5, and 10"
 │   └── Lesson: "Practice Quiz"
 ├── Section: "Multi-Digit"
 │   ├── Lesson: "Multiplying 2-Digit Numbers"
 │   └── Lesson: "Word Problems"
-└── Final Assessment
+└── Final Exam
 ```
 
-**Sections** are optional groupings—use them to organize lessons into units.
+**Sections** are like folders inside your course. They help you group lessons together. Sections are optional. You don't have to use them.
 
-**Lessons** are what students actually complete. Each can have content, projects, and quizzes.
+**Lessons** are what students actually work through. Each lesson can have text, videos, worksheets, and quizzes.
+
+## Create a New Course
+
+There are two ways to create a course:
+
+### Option 1: Start From Scratch
+
+1. Click **Courses** in the sidebar
+2. Click **New Course**
+3. Type in a name for your course
+4. The course opens and you can start adding sections and lessons
+
+### Option 2: Generate With AI
+
+If you have source materials (like a textbook or curriculum guide), AI can build a course outline for you:
+
+1. Click **Courses** in the sidebar
+2. Click **Generate with AI**
+3. Pick the source files you want AI to use as a reference
+4. Describe your target audience (for example: "High school juniors preparing for the SAT, with basic algebra knowledge")
+5. Open **Advanced Settings** if you want to control the structure:
+   - **Number of Sections** (2 to 10, default is 5)
+   - **Lessons per Section** (2 to 8, default is 4)
+   - **Extract Quiz Questions** - turn this on if you want AI to create quiz questions for each lesson (you can pick how many questions per lesson, from 1 to 10)
+6. Click **Generate**
+7. Review the outline AI creates and change anything you want
+
+<Note>
+Using source materials for AI generation requires the **Pro** plan.
+</Note>
+
+## Course Settings
+
+After you create a course, you can change these settings:
+
+### Name and Description
+- **Name**: What students see (for example: "Unit 3: Multiplication")
+- **Description**: A short note about what the course covers. Optional.
+
+### Progress Mode
+
+This controls how students move through your lessons:
+
+| Mode | How It Works |
+|------|-------------|
+| **Sequential** | Students must finish each lesson before they can move to the next one. Good when lessons build on each other. |
+| **Flexible** | Students can do lessons in any order they want. Good for review or independent study. |
+
+### AI Tutor
+
+You can pick an AI tutor for your course. This tutor will be available to help students in every lesson. You can also pick a different tutor for a specific lesson later.
+
+<Card title="Learn about AI Tutors" icon="robot" href="/ai-tutor/overview">
+  See how to set up an AI tutor for your course.
+</Card>
+
+## Add Sections
+
+Sections help you organize your lessons into groups (like units or chapters):
+
+1. Click **Add Section**
+2. Type in a name (for example: "Unit 1: Introduction")
+3. Drag sections up or down to put them in the right order
+
+You don't have to use sections. You can add lessons directly to the course without them.
+
+## Add Lessons
+
+1. Click **Add Lesson** (inside a section, or directly in the course)
+2. Type in a lesson name
+3. Set up the lesson content
+
+<Card title="How to Create a Lesson" icon="book-open" href="/courses/lessons">
+  Learn how to add content, worksheets, and quizzes to a lesson.
+</Card>
+
+### Reorder Lessons
+
+- Drag lessons up or down to change the order
+- Drag lessons between sections to move them
+- Drag a lesson outside all sections to make it standalone
 
 ## Course Status
 
-| Status | Who Can See It |
-|--------|----------------|
-| **Draft** | Only you and your team |
-| **Published** | Students can access it |
-| **Archived** | Hidden from everyone |
+| Status | What It Means |
+|--------|--------------|
+| **Draft** | Only you and your team can see it. Students cannot. |
+| **Published** | Students can see it and start working. |
+| **Archived** | Hidden from everyone. Use this when you're done with a course. |
 
 <Warning>
-Students cannot see Draft courses. Publish when you're ready for students to start.
+Students can only see courses that are **Published**. Keep your course in Draft while you are still building it.
 </Warning>
 
-## Progress Modes
+## Publishing Your Course
 
-How students move through your course:
+When you are ready for students to start:
 
-### Sequential
-- Students complete lessons in order
-- Each lesson unlocks after the previous one
-- Good for: Content that builds on itself
+1. Look through all your lessons to make sure everything is right
+2. Click **Publish** in the course settings
+3. The status changes to **Published**
+4. Students can now see the course and start working
 
-### Flexible
-- Students can access any lesson anytime
-- They choose their own path
-- Good for: Review materials, independent study
+## After You Publish
 
-## Viewing Your Courses
-
-Click **Courses** in the sidebar to see all courses in your workspace.
-
-Each course shows:
-- Name and description
-- Status (Draft, Published, Archived)
-- Number of lessons
+Once your course is published, you can see:
 - How many students are enrolled
+- How many lessons each student has finished
+- Quiz scores
+- How long students spend on each lesson
 
-Click a course to see its lessons and settings.
-
-## What's Next
-
-<CardGroup cols={2}>
-  <Card title="Create a Course" icon="plus" href="/courses/creating-courses">
-    Build a new course from scratch.
-  </Card>
-  <Card title="Set Up Lessons" icon="book-open" href="/courses/lessons">
-    Add content, projects, and quizzes to lessons.
-  </Card>
-  <Card title="Track Progress" icon="chart-line" href="/students/progress-tracking">
-    See how students are doing.
-  </Card>
-</CardGroup>
+<Card title="Track Student Progress" icon="chart-line" href="/workspaces/overview">
+  Learn more about seeing how your students are doing.
+</Card>

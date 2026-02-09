@@ -1,69 +1,197 @@
 ---
-title: "Lessons"
-description: "Add content, projects, and quizzes to lessons"
+title: "How to Create a Lesson"
+description: "Add sources, objectives, assignments, and content to your lessons"
 ---
 
-Lessons are what students complete. Each lesson can have text, videos, worksheets, and quizzes.
+A lesson is one step in your course. Each lesson can have reading material, videos, worksheets, quizzes, and more. This page shows you how to set everything up.
 
-## What Goes in a Lesson
+## Create a Lesson
 
-### Text Content
-Instructions, explanations, or reading material. Write in the lesson editor with formatting.
+1. Open your course
+2. Click **Add Lesson** (inside a section, or directly in the course)
+3. Type in a lesson name
+4. The lesson editor opens with four tabs: **Sources**, **Details**, **Quiz**, and **Content**
 
-### Video
-Embed a YouTube/Vimeo link or upload a video file directly.
+## Sources
 
-### Projects
-Attach worksheets or slides from your library:
+The **Sources** tab is where you attach files that help AI understand what you're teaching. Sources are things like textbook pages, curriculum guides, or standards documents.
 
-1. Click **Add Project**
-2. Select from your projects (or create new)
-3. Mark as **Primary** (required) or **Supplemental** (optional)
-4. Drag to reorder
+When you attach a source to a lesson, two things happen:
 
-**Primary projects** are required for completion. **Supplemental projects** are extra practice.
+1. **Students can see it** as a reference while they work
+2. **AI uses it** to write better content, create better quiz questions, and give better tutor responses
 
-### Quizzes
-Add an adaptive quiz to test understanding:
+### How to Add a Source
 
-1. Click **Add Quiz**
-2. Configure quiz settings
-3. Add questions (or let AI generate them)
+1. Open your lesson and go to the **Sources** tab
+2. Upload a file or pick one from your source library
+3. Choose the specific pages that go with this lesson
 
-<Card title="Learn About Quizzes" icon="clipboard-question" href="/quizzes/overview">
-  See how adaptive quizzes work.
+You can add more than one source to a lesson. Sources are what make AI generation work well, so add them before you generate objectives, content, or quiz questions.
+
+<Card title="Learn About Sources" icon="folder-open" href="/sources/overview">
+  See how to upload and organize your source files.
+</Card>
+
+## Objectives
+
+The **Details** tab is where you set the lesson name, description, and learning objectives.
+
+Learning objectives tell students what they will learn. They also help AI write better content and quiz questions.
+
+### How to Add Objectives
+
+1. Go to the **Details** tab
+2. Find the **Learning Objectives** section
+3. Type in what students should be able to do after this lesson
+4. You can add up to 8 objectives per lesson
+
+**Examples of good objectives:**
+- "Students will be able to multiply two-digit numbers"
+- "Students will identify the main idea in a paragraph"
+- "Students will explain why plants need sunlight"
+
+### Let AI Suggest Objectives
+
+If you've already added sources, click the **Generate** button next to Learning Objectives. AI reads your source material and suggests objectives for you. You can keep them, change them, or remove them.
+
+If objectives already exist, the button says **Regenerate** instead.
+
+<Note>
+The Generate button only works if you've added sources first. Add your source files in the Sources tab before trying to generate objectives.
+</Note>
+
+### Standards Alignment
+
+You can connect your lesson to specific standards:
+- Common Core (Math or ELA)
+- Next Generation Science Standards (NGSS)
+- C3 Social Studies
+- AP, IB, or State standards
+
+AI can suggest which standards match your lesson. You decide whether to accept or change them.
+
+## Assignments
+
+Assignments are the worksheets and projects that students complete in your lesson. You set these up in the **Content** tab. You can attach projects you've already made or create new ones.
+
+### How to Add an Assignment
+
+1. Go to the **Content** tab
+2. Click **Add Project**
+3. Pick a project from your library (or create a new one)
+4. Choose the role:
+
+| Role | What It Means |
+|------|--------------|
+| **Primary** | Students must complete this to finish the lesson |
+| **Supplemental** | Extra practice. Students can skip it if they want. |
+
+### How Students Turn In Work
+
+You can pick how students submit their work:
+
+| Method | How It Works |
+|--------|-------------|
+| **Digital** | Students complete the worksheet right on the screen |
+| **Print and Upload** | Students print it out, do it on paper, and take a photo to upload |
+
+### Reorder Assignments
+
+Drag assignments up or down to put them in the order you want. A good order is:
+1. Instruction or reading first
+2. Practice next
+3. Assessment last
+
+## Content
+
+The **Content** tab is also where you write the main lesson text and add video. This is what students see when they open the lesson.
+
+### Adding Text
+
+1. Go to the **Content** tab
+2. Click in the text area
+3. Type your instructions or explanation
+4. Use the toolbar to add bold, lists, headings, and more
+
+You can write as much or as little as you want. Some teachers write a short intro. Others write a full lesson plan.
+
+### Adding Video
+
+You can add a video to your lesson in two ways:
+- **Paste a link** from YouTube or Vimeo
+- **Upload a video file** from your computer
+
+The video shows at the top of the lesson so students see it first.
+
+### Let AI Write Your Content
+
+If you've added sources and objectives, AI can write the lesson content for you:
+
+1. Click **Generate** in the Content tab
+2. Pick a length:
+   - **Brief** (about 500 words)
+   - **Standard** (about 1,000 words) - this is the default
+   - **Comprehensive** (about 2,000 words)
+3. Click **Generate** (or **Replace & Generate** if content already exists)
+4. AI writes lesson text based on your sources and objectives
+5. Read through it and change anything you want
+
+### Teacher Context (Helps AI Do a Better Job)
+
+You can give AI extra information about your students so it writes better content:
+
+| Setting | What It Does |
+|---------|-------------|
+| **Population Type** | General, Intervention, Honors, English Language Learners, or Special Education |
+| **Scaffolding Level** | How much support to include: Minimal, Moderate, or Heavy |
+| **Focus Areas** | Specific skills to focus on (like vocabulary or problem-solving steps) |
+| **Notes** | Anything else you want AI to know about your class |
+
+## Adding a Quiz
+
+The **Quiz** tab is where you add questions to test if students understand the lesson. Quizzes in Checkfu adjust to each student's level automatically.
+
+1. Go to the **Quiz** tab
+2. Add questions yourself or click **Generate Questions** to let AI create them from your sources
+3. Set your quiz settings:
+
+| Setting | What It Does |
+|---------|-------------|
+| **Target Questions** | How many questions to aim for (default: 5) |
+| **Max Questions** | The most questions a student will see (default: 10) |
+| **Mastery Threshold** | How many right answers in a row means the student "gets it" (default: 2) |
+| **Allow Early Exit** | Let strong students finish early if they show mastery |
+| **Hints Enabled** | Let students see hints when they're stuck |
+| **Max Retakes** | How many times a student can try the quiz again |
+
+<Card title="Learn About Adaptive Quizzes" icon="clipboard-question" href="/ai-tutor/adaptive-quiz">
+  See how quizzes adjust to each student's level.
 </Card>
 
 ## Lesson Settings
 
-- **Title**: Lesson name
-- **Description**: Brief overview for students
-- **Agent Override**: Use a different AI tutor than the course default
-
-## What Students Experience
-
-When a student opens your lesson:
-
-1. They see the description and any video
-2. They work through the attached projects
-3. Their work saves automatically
-4. They submit when finished
-5. If there's a quiz, they take it
-6. The AI tutor is available for help throughout
+| Setting | What It Does |
+|---------|-------------|
+| **Title** | The lesson name students see |
+| **Description** | A short overview of what the lesson is about |
+| **Estimated Time** | How long you think it will take (shown to students) |
+| **AI Tutor Override** | Use a different AI tutor than the course default, or turn it off for this lesson |
+| **Previewable** | Let students see this lesson before they enroll in the course |
 
 ## Tips
 
 <AccordionGroup>
-  <Accordion title="Start with context">
-    Include a description or video explaining what students will learn.
+  <Accordion title="Add sources first">
+    Sources power everything else. Add your source files before you try to generate objectives, content, or quiz questions.
   </Accordion>
-  <Accordion title="Order projects logically">
-    Put instruction first, then practice, then assessment.
+  <Accordion title="Put things in a clear order">
+    Teach first, then practice, then test. Students do best when lessons follow a clear path.
   </Accordion>
-  <Accordion title="Use supplemental for differentiation">
-    Add easier or harder projects as supplemental for students who need them.
+  <Accordion title="Use supplemental assignments for different levels">
+    Add an easier worksheet as supplemental for students who need extra help. Add a harder one for students who need a challenge.
   </Accordion>
-  <Accordion title="Configure the AI tutor">
-    Set up an agent with context about your lesson for better student help.
+  <Accordion title="Set up the AI tutor">
+    If you have an AI tutor, give it details about this lesson so it can help students better.
   </Accordion>
 </AccordionGroup>

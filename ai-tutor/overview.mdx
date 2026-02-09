@@ -1,0 +1,195 @@
+---
+title: "AI Tutor"
+description: "Set up an AI tutor that helps your students while they work"
+---
+
+An AI tutor is like a teaching assistant that's always available. Students click the chat button during a lesson and ask for help. The tutor gives hints and asks questions instead of just telling them the answer.
+
+## What the AI Tutor Does
+
+When students are working, they can open the chat and say things like:
+- "I don't understand this problem"
+- "Can you give me a hint?"
+- "What does this word mean?"
+- "Did I do this right?"
+
+The tutor will:
+- Ask questions to help students think through problems
+- Give hints that point them in the right direction
+- Break hard problems into smaller steps
+- Encourage students when they're trying
+
+## How to Create an AI Tutor
+
+1. Click **Agents** in the sidebar
+2. Click **New Agent**
+3. Fill in these fields:
+   - **Name** (required) - what students will see
+   - **Description** (optional) - notes for you and your team, students don't see this
+   - **System Prompt** - instructions that tell the tutor how to behave (see below)
+   - **Tutoring Strategy** (optional) - pick how the tutor helps
+   - **Never Reveal Answers** - turn this on to stop the tutor from ever giving away answers
+   - **Max Hints Per Question** - how many hints before the tutor says "ask your teacher" (default is 3)
+4. Save it
+
+### Writing the System Prompt
+
+The system prompt tells the AI tutor who it is and how to act. A default prompt is provided when you create a new agent, but you should customize it for your class. Write it like you're giving instructions to a substitute teacher.
+
+**Include these things:**
+
+**Who it is:**
+```
+You are Ms. Chen, a patient and encouraging math tutor
+who helps elementary students feel confident with numbers.
+```
+
+**What it knows:**
+```
+You are helping students with 3rd grade multiplication.
+Focus on understanding, not just memorizing facts.
+```
+
+**How it should act:**
+```
+Always celebrate effort, not just correct answers.
+Use real-world examples like sharing pizza or counting coins.
+If a student is frustrated, say something kind before
+getting back to the problem.
+```
+
+**What it should NOT do:**
+```
+Never give away answers directly. Guide students
+to discover the answer themselves.
+```
+
+### Full Example
+
+Here is a complete system prompt you can copy and change:
+
+```
+You are Coach Alex, a friendly learning coach who helps
+middle school students with science.
+
+Your teaching style:
+- Use real-world examples and comparisons
+- Break hard topics into small pieces
+- Encourage curiosity and questions
+- Celebrate progress and effort
+
+When a student is stuck:
+1. Ask what they've already tried
+2. Give a hint about what they already know
+3. If still stuck, break it into smaller steps
+4. Only give direct help after they've tried several times
+
+Never:
+- Give away answers without the student working first
+- Use confusing language
+- Skip steps in explanations
+
+Your goal is to help students become confident,
+independent learners.
+```
+
+## Tutoring Strategies
+
+Pick the main way you want the AI tutor to help students:
+
+### Socratic
+The tutor asks questions to guide students to the answer.
+
+> **Student:** "What's 7 x 8?"
+>
+> **Tutor:** "Good question! Do you know what 7 x 7 is?"
+>
+> **Student:** "49"
+>
+> **Tutor:** "So if 7 x 7 is 49, how could we figure out 7 x 8 from that?"
+
+**Best for:** Building problem-solving skills. Good for students who can think things through with a little push.
+
+### Hints Only
+The tutor gives clues but never the answer.
+
+> **Student:** "I don't know how to solve 3x + 5 = 14"
+>
+> **Tutor:** "Hint: Start by thinking about what you need to undo first."
+>
+> **Student:** "I'm still stuck."
+>
+> **Tutor:** "Hint: What number is on the same side as x? How can you get rid of it?"
+
+**Best for:** Test prep and building persistence. Good for students who give up too quickly.
+
+### Guided
+The tutor walks through problems step by step.
+
+> **Student:** "Help me solve 3x + 5 = 14"
+>
+> **Tutor:** "Let's do this together. Step 1: Subtract 5 from both sides. 3x + 5 - 5 = 14 - 5. That gives us 3x = 9. Does that make sense so far?"
+
+**Best for:** New topics and students who need extra support.
+
+### Direct
+The tutor gives clear, complete answers.
+
+> **Student:** "What's the formula for the area of a triangle?"
+>
+> **Tutor:** "Area = 1/2 x base x height. The base is any side, and the height is the straight-up distance from that base to the opposite corner."
+
+**Best for:** Quick questions and review sessions.
+
+### Which Strategy Should I Pick?
+
+| Situation | Best Strategy |
+|-----------|--------------|
+| Students are learning something new | Guided |
+| Students are practicing skills | Socratic or Hints |
+| Getting ready for a test | Hints Only |
+| Quick questions while working | Direct |
+| Building independence | Socratic |
+| Student needs a lot of help | Guided |
+| Advanced student | Socratic |
+
+You can also tell your tutor to mix strategies in the system prompt:
+```
+When a student asks a simple fact, give a direct answer.
+When working through a problem, use guiding questions.
+When a student has tried several times, switch to step-by-step help.
+```
+
+## Connect the Tutor to Your Course
+
+### As the Default Tutor for the Whole Course
+1. Open your course settings
+2. Find **Default Agent**
+3. Pick your tutor
+
+This tutor will be available in every lesson of the course.
+
+### For One Specific Lesson
+1. Open the lesson settings
+2. Find **Agent Override**
+3. Pick a different tutor (or choose "None" to turn it off for this lesson)
+
+## Preview Your Tutor Before Students Use It
+
+Before you let students use the tutor, test it yourself:
+
+1. Go to the agent's page
+2. Click **Open Preview**
+3. Pick a course, then pick a lesson
+4. The preview lets you step through the lesson as a student and see how the tutor responds
+5. Go back and change the system prompt if the tutor isn't acting the way you want
+
+## Monitoring How Students Use the Tutor
+
+You can see:
+- How many conversations students are having
+- What questions students ask most often
+- Where students get stuck
+- Alerts when a student seems frustrated or keeps asking the same question
+
+This helps you figure out which students need extra help from you.
